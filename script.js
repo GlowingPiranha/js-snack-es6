@@ -77,18 +77,39 @@ const squadre = [
     faults: 0,
   },
   {
-    name: "",
+    name: "Bayern",
     points: 0,
     faults: 0,
   },
   {
-    name: "",
+    name: "Barcellona",
     points: 0,
     faults: 0,
   },
 ]
-
+// funzione per i numeri random
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+// imposto il valore in points e faults all'interno di squadre
+for (let i = 0; i < squadre.length; i++) {
+  squadre[i].points = randomInt(0, 5);
+  squadre[i].faults = randomInt(0, 20);
+}
+// per sicurezza faccio un log
+console.log(squadre);
+
+// nuovo array che mostra solo il nome e i falli subiti
+const squadreEFalli = [];
+squadre.forEach((squadra) => {
+  squadreEFalli.push({
+    name: squadra.name,
+    faults: squadra.faults,
+  });
+});
+
+console.log("solo il nome e i falli subiti dalla squadra: ", squadreEFalli);
+
+
 
