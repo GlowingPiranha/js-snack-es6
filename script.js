@@ -34,7 +34,9 @@ const bikes = [
   }];
 
 let less = bikes[0];
+// variabile che inizializzo col primo elemento
 
+// funzione che confronta ogni elemento con il più leggero fino a quel momento, se trovi più leggero lo salva come nuovo minimo
 for (let i = 1; i < bikes.length; i++) {
   if (bikes[i].weight < less.weight) {
     less = bikes[i];
