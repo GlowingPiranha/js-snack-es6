@@ -44,3 +44,51 @@ for (let i = 1; i < bikes.length; i++) {
 }
 
 console.log(`Questa è la bici ${less.name} con il peso di ${less.weight}. è la più leggera!`);
+
+
+
+
+// snack due
+
+const squadre = [
+  {
+    name: "Triestina",
+    points: 0,
+    faults: 0,
+  },
+  {
+    name: "Milan",
+    points: 0,
+    faults: 0,
+  },
+  {
+    name: "Inter",
+    points: 0,
+    faults: 0,
+  },
+  {
+    name: "Lazio",
+    points: 0,
+    faults: 0,
+  },
+  {
+    name: "Udinese",
+    points: 0,
+    faults: 0,
+  },
+  {
+    name: "",
+    points: 0,
+    faults: 0,
+  },
+  {
+    name: "",
+    points: 0,
+    faults: 0,
+  },
+]
+
+function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
